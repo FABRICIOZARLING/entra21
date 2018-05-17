@@ -1,4 +1,4 @@
-package exercicio;
+package exercicios;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

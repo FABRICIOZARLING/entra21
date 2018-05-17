@@ -1,5 +1,6 @@
-package exercicio;
+package exercicios;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,7 +15,7 @@ public class Exe03 {
 	public static void main(String[] args) {
 		JFrame formulario = new JFrame("Media de notas com formulário de Input");
 		formulario.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		formulario.setSize(500, 500);
+		formulario.setSize(330, 500);
 		formulario.setLocationRelativeTo(null);
 		formulario.setLayout(null);
 		
@@ -30,7 +31,9 @@ public class Exe03 {
 		
 		
 		JLabel resultado = new JLabel();
-		resultado.setBounds(30,210, 280, 50);
+		resultado.setBounds(30, 210, 250, 50); 
+		//resultado.setBackground(Color.red);
+		//resultado.setOpaque(true);
 		
 		//JTextfield
 		JTextField c_n1 = new JTextField();
@@ -43,14 +46,14 @@ public class Exe03 {
 		//JButton
 		
 		JButton acao = new JButton("Exibir situação");
-		acao.setBounds(30, 150, 280, 20);
+		acao.setBounds(30, 150, 250, 20);
 		acao.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				double media = (Double.parseDouble(c_n1.getText())+Double.parseDouble(c_n2.getText())+Double.parseDouble(c_n3.getText()))/3.0;
 				
-				String texto = "<html><center>A situação do aluno";
+				String texto = "<html><div style=\"width: 200px;\"><center>A situação do aluno";
 				texto+= "<br>Média "+String.format("%.2f",media );
 				texto+="<br>Situação: ";
 				if(media<5) {
@@ -60,7 +63,7 @@ public class Exe03 {
 				}else {;
 					texto +="Aprovado";
 				}
-				texto +="</center></html>";
+				texto +="</center><div></html>";
 				
 				resultado.setText(texto);
 				c_n1.setText("");
