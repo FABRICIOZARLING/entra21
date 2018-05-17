@@ -51,7 +51,7 @@ public class Exe05 {
 				String texto ="";
 				int dia = 0;
 				try {
-					dia = Integer.parseInt(c_dia.getText());
+					dia = Integer.parseInt(c_dia.getText()); 
 					if(dia<1||dia>28) {
 						dia = Integer.parseInt("erro");
 					}

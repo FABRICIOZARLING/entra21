@@ -15,7 +15,7 @@ public class Exe04 {
 		formulario.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		formulario.setSize(330, 500);
 		formulario.setLocationRelativeTo(null);
-		formulario.setLayout(null);
+		formulario.setLayout(null); 
 		
 		//JLabel
 		JLabel produto = new JLabel("Produto");

@@ -48,7 +48,7 @@ public class Exe06 {
 		acao.addActionListener(new ActionListener() {
 			
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) { 
 				int n1=0, n2=0;
 				boolean valida = false;
 				String texto ="";

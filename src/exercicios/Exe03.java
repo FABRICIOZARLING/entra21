@@ -41,7 +41,7 @@ public class Exe03 {
 		JTextField c_n2 = new JTextField();
 		c_n2.setBounds(120, 60, 150, 20);
 		JTextField c_n3 = new JTextField();
-		c_n3.setBounds(120, 90, 150, 20);
+		c_n3.setBounds(120, 90, 150, 20); 
 		
 		//JButton
 		
